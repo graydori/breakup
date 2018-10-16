@@ -1,0 +1,157 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Breakup</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Content -->
+  <h1>Breakup</h1>
+  <ul>
+    <li id="end"> <!-- 14 -->
+      <span id="pos">I love you too.</span>
+      <span id="neg">I feel so empty.</span>
+      <span id="reality">Sorry wrong number</span>
+    </li>
+    <li id="sense"> <!-- 13 -->
+      <span>But it doesn’t make sense</span>
+      <ul>
+        <li><a href="#end" data-status="reality">You’re talking to the wrong person</a></li>
+        <li><a href="#end" data-status="neg">You never let me be and just wanted control me</a></li>
+        <li><a href="#end" data-status="pos">Sometime a relationship is not working and that’s okay, sometimes we need to move on. I’ll always love you.</a></li>
+      </ul>
+    </li>
+    <li id="understand"> <!-- 12 -->
+      <span>I don’t understand</span>
+      <ul>
+        <li><a href="#sense" data-status="reality">We don’t know each other</a></li>
+        <li><a href="#sense" data-status="pos">It was a moment of love but we must moved on. It’s best for both of us</a></li>
+        <li><a href="#sense" data-status="neg">You were always trying to trap me</a></li>
+      </ul>
+    </li>
+    <li id="world"> <!-- 11 -->
+      <span>I loved you so much. You were my world</span>
+      <ul>
+        <li><a href="#understand" data-status="reality">We were never in love</a></li>
+        <li><a href="#understand" data-status="pos">I loved you too</a></li>
+        <li><a href="#understand" data-status="neg">You were never enough</a></li>
+      </ul>
+    </li>
+    <li id="truth"> <!-- 10 -->
+      <span>Just tell me the truth</span>
+      <ul>
+        <li><a href="#world" data-status="pos">We don’t know each other</a></li>
+        <li><a href="#world" data-status="neg">You can’t handle the truth</a></li>
+        <li><a href="#world" data-status="reality">What truth</a></li>
+      </ul>
+    </li>
+    <li id="loss"> <!-- 9 -->
+      <span>I can’t deal with the loss of you</span>
+      <ul>
+        <li><a href="#truth" data-status="reality">You didn’t lose anyone</a></li>
+        <li><a href="#truth" data-status="pos">I’m always here for you</a></li>
+        <li><a href="#truth" data-status="neg">You caused this</a></li>
+      </ul>
+    </li>
+    <li id="close"> <!-- 8 -->
+      <span>I just want to feel that closeness again</span>
+      <ul>
+        <li><a href="#loss" data-status="reality">We never did</a></li>
+        <li><a href="#loss" data-status="neg">You never gave me what I wanted</a></li>
+        <li><a href="#loss" data-status="pos">I’ll cherish it forever</a></li>
+      </ul>
+    </li>
+    <li id="anything"> <!-- 7 -->
+      <span>I’ll do anything, it hurts so much</span>
+      <ul>
+        <li><a href="#close" data-status="reality">Please stop</a></li>
+        <li><a href="#close" data-status="pos">Time heals all wounds</a></li>
+        <li><a href="#close" data-status="neg">Not my problem</a></li>
+      </ul>
+    </li>
+    <li id="change"> <!-- 6 -->
+      <span>I can change, what do you want?</span>
+      <ul>
+        <li><a href="#anything" data-status="pos">Don’t change for me, change for yourself.</a></li>
+        <li><a href="#anything" data-status="neg">I tried and your wouldn’t listen what makes you think now is any different?</a></li>
+        <li><a href="#anything" data-status="reality">Go away</a></li>
+      </ul>
+    </li>
+    <li id="like"> <!-- 5 -->
+      <span>Did you not like any of it?</span>
+      <ul>
+        <li><a href="#change" data-status="reality">I don’t know what you’re talking about</a></li>
+        <li><a href="#change" data-status="pos">It was beautiful</a></li>
+        <li><a href="#change" data-status="neg">You’re so manipulative</a></li>
+      </ul>
+    </li>
+    <li id="push"> <!-- 4 -->
+      <span>I don’t know why you keep pushing me away.</span>
+      <ul>
+        <li><a href="#like" data-status="pos">Things can’t always stay the same</a></li>
+        <li><a href="#like" data-status="neg">Yah because you’re crazy.</a></li>
+        <li><a href="#like" data-status="reality">I don’t know you.</a></li>
+      </ul>
+    </li>
+    <li id="hold"> <!-- 3 -->
+      <span>We would hold each other forever, it was beautiful. Don’t you remember?</span>
+      <ul>
+        <li><a href="#push" data-status="reality">Remember what?</a></li>
+        <li><a href="#push" data-status="pos">It was but that’s in the past.</a></li>
+        <li><a href="#push" data-status="neg">You’re so clingy.</a></li>
+      </ul>
+    </li>
+    <li id="hurt"> <!-- 2 -->
+      <span>Why would you say that? It hurts so much.</span>
+      <ul>
+        <li><a href="#hold" data-status="neg">Move on - I don’t love you</a></li>
+        <li><a href="#hold" data-status="reality">Who are you?!</a></li>
+        <li><a href="#hurt" data-status="pos">I’m trying to understand you.</a></li>
+      </ul>
+    </li>
+    <li id="in-love"> <!-- 1 -->
+      <span>I thought we were in love</span>
+      <ul>
+        <li><a href="#hurt" data-status="reality">Who are you?</a></li>
+        <li><a href="#hurt" data-status="neg">It was a figment of your imagination</a></li>
+        <li><a href="#hurt" data-status="pos">Why?</a></li>
+      </ul>
+    </li>
+  </ul>
+  <form action="next">
+    <textarea name="" placeholder="How do you feel?" width="100%" row="5"></textarea>
+    <button>Submit</button>
+  </form>
+  <!-- End Content -->
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
