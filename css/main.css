@@ -8,6 +8,10 @@ html.neg #neg,
 html.pos #pos {
   display: block;
 }
+svg {
+  position: absolute;
+  z-index: -1;
+}
 
 form {
   border-radius: 15px;

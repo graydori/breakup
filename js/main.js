@@ -6,7 +6,6 @@ const cookie = {};
 
 };
 
-
 // Loading
 const cookies = document.cookie.split(';');
 console.log(cookies);
@@ -20,11 +19,10 @@ $.each(cookies, (_key, pair) => {
   }
 });
 
-//
+// Location
 if (location.hash) {
   $(location.hash).nextAll(':not(.loaded)').find('a').addClass('never-selected');
 }
-
 
 // Action
 $(document).on('click','a', ({ target }) => {
