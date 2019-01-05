@@ -59,6 +59,7 @@ h1 {
   top: 0;
   animation-name: intro;
   animation-duration: 1s;
+  color: #fff;
 }
 
 body > ul > li:last-child,
