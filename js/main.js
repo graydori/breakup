@@ -2,9 +2,23 @@ const cookie = {};
 
 
 // Determine current status based of value sum
-() => {
 
+const state = {
+  "reality" : 0,
+  "pos": 0,
+  "neg": 0
 };
+
+function update(value) {
+  state[value]++;
+  var max = 0;
+  for (x in state) {
+    if (state[x] > max) {
+        $('body').removeClass("reality pos neg").addClass(x);
+        max = state[x];
+    }
+  }
+}
 
 // Loading
 const cookies = document.cookie.split(';');
@@ -16,6 +30,7 @@ $.each(cookies, (_key, pair) => {
     const parent = $(`#${key}`).addClass('loaded');
     const selected = parent.find(`a[data-status=${value}]`).addClass('selected');
     parent.find('a').not(selected).addClass('not-selected');
+    update(value);
   }
 });
 
@@ -25,6 +40,10 @@ if (location.hash) {
 }
 
 // Action
+$(document).on('click','a.selected', (ev) => {
+  ev.preventDefault();
+  return false;
+});
 $(document).on('click','a', ({ target }) => {
   const selected = $(target);
   const parent = selected.addClass('selected').parents('li[id]').addClass('loaded');
@@ -34,4 +53,6 @@ $(document).on('click','a', ({ target }) => {
   //Update Cookie state
   cookie[id] = status;
   document.cookie = `${id}=${status};`;
-})
+  console.log(document.cookie);
+  update(id);
+});

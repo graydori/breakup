@@ -54,6 +54,12 @@
       <span id="pos">I love you too.</span>
       <span id="neg">I feel so empty.</span>
       <span id="reality">Sorry wrong number</span>
+      <form action="next">
+        <input type="hidden" name="useragent" />
+        <input type="hidden" name="ip" />
+        <textarea name="feelings" placeholder="How do you feel?" width="100%" row="1"></textarea>
+        <button><img alt="Send" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADFwAAAxcBwpsE1QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGmSURBVGiB7Zc/TsMwFIefgfJnYq8oFaVFggNwDhBcACYQDJSzwHkQGzdAQKkoVOrE0ooFJD6GOiIqbpOmOM7wPimL/eL3+5JYikUURVGUGMASsBQ6x0wAG8CLvTZC58kEUAHa/NIG1kLnmgor0eIvT0AldL5UAOvAs0MiogWsh845EaAOvE2QiHgF6qHzOgG2gV4KiYi3wskAO1NKRPSAndD5RUQEqAGdDBIRHaAWWqLO8HuflVdgM5REg3QbOy357xlgC+hOCPVtr7TjEV2gkZfECvCQIHECfDrmPoHTBJl7YDkPkcMEiTNb5xSxc+cJMgfT5prL4LI6zlFELowx10kLGGOuRKSZocf/AVSBD8dTbI7UjX0jsZpLR80AqHoXsQH2gXfbuA8cOWoSRWzdsV0Du+ZeLhKxAAsMfxBLY+ZTidjakl1rIWsek/XGJGzoUckvY8yij35ZNnshUZGioSJFQ0WKhooUDRUpGipSNFQkBQPHWN9XM58it46xG4/9/ACUgcfY6bAFlH3183ZCFBkeh0VkV0TmReTOGPPls5+iKIqSOz+//PHBQmd6nQAAAABJRU5ErkJggg=="></button>
+      </form>
     </li>
     <li id="sense"> <!-- 13 -->
       <span>But it doesn’t make sense</span>
@@ -160,10 +166,6 @@
       </ul>
     </li>
   </ul>
-  <form action="next">
-    <textarea name="" placeholder="How do you feel?" width="100%" row="5"></textarea>
-    <button>Submit</button>
-  </form>
   <!-- End Content -->
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>

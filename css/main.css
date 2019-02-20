@@ -17,8 +17,8 @@ form {
   border-radius: 15px;
   border: 1px solid rgb(229,229,234);;
   display: flex;
-  max-width: 500px;
-  width: 70%;
+  max-width: 450px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -28,24 +28,35 @@ form {
 form textarea {
   border: 0;
   outline: 0;
+  flex-grow: 1;
+  height: 1em;
+  min-height: 1em;
+  max-height: 4em;
+  resize:vertical;
 }
 form button {
   border-radius: 100%;
   border: 0;
+  padding: 0 2px;
   color: white;
   background: rgb(63,144,241);
   align-self: flex-end;
   justify-content: flex-end;
 }
 
-@keyframes into {
-  from {transform: translateY(0);}
-  to {transform: translateY(-100vh);}
+form button img {
+  height: 1.2em;
 }
+
+@keyframes intro {
+  from {transform: translateY(0);}
+  to {transform: translateY(-100vh); height: 0;}
+}
+
 body {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-  animation: intro 1s;
 }
+
 h1 {
   text-align: center;
   height: 100vh;
@@ -57,9 +68,8 @@ h1 {
   justify-content: center;
   position: relative;
   top: 0;
-  animation-name: intro;
-  animation-duration: 1s;
   color: #fff;
+  animation: intro 5s forwards;
 }
 
 body > ul > li:last-child,
@@ -80,6 +90,7 @@ body > ul > li {
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
+  padding-top: 20px;
 }
 
 ul, li {
@@ -139,8 +150,17 @@ a {
   margin-bottom: 5px;
 }
 
+a:hover {
+  box-shadow: rgba(0,0,0,0.3) 0 3px 20px;
+}
+
+li.loaded a:hover {
+  pointer-events: none;
+  box-shadow: none;
+  cursor: default;
+}
+
 ul ul {
-  margin-bottom: 20px;
   width: 100%;
 }
 
