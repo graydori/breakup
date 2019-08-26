@@ -14,9 +14,13 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'G-KN1SP3FJNQ', 'auto'); ga('send', 'pageview')
+  </script>
 </head>
 
-<body>
+<body class="animated">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -34,7 +38,7 @@
       </g>
      </g>
      <g transform="translate(-25,20)">
-      <title>Layer 1</title>
+      <title>Breakup Logo</title>
       <path stroke="#0f0f00" id="svg_6" d="m271.75342,151.17531l0,-40.99997l40.99997,40.99997l-40.99997,0z" stroke-width="0" fill="#ffaaaa"/>
       <path transform="rotate(-90 250.7533874511719,131.1753082275391) " stroke="#0f0f00" id="svg_7" d="m230.2534,151.6753l0,-40.99997l40.99997,40.99997l-40.99997,0z" stroke-width="0" fill="#ff5656"/>
       <path stroke="#0f0f00" id="svg_10" d="m352.25011,151.175311l0,-40.99997l40.99997,40.99997l-40.99997,0z" stroke-width="0" fill="#ffaaaa"/>
@@ -57,7 +61,7 @@
       <form action="next">
         <input type="hidden" name="useragent" />
         <input type="hidden" name="ip" />
-        <textarea name="feelings" placeholder="How do you feel?" width="100%" row="1"></textarea>
+        <textarea id="feelings" name="feelings" placeholder="How do you feel?" width="100%" row="1"></textarea>
         <button><img alt="Send" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADFwAAAxcBwpsE1QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGmSURBVGiB7Zc/TsMwFIefgfJnYq8oFaVFggNwDhBcACYQDJSzwHkQGzdAQKkoVOrE0ooFJD6GOiIqbpOmOM7wPimL/eL3+5JYikUURVGUGMASsBQ6x0wAG8CLvTZC58kEUAHa/NIG1kLnmgor0eIvT0AldL5UAOvAs0MiogWsh845EaAOvE2QiHgF6qHzOgG2gV4KiYi3wskAO1NKRPSAndD5RUQEqAGdDBIRHaAWWqLO8HuflVdgM5REg3QbOy357xlgC+hOCPVtr7TjEV2gkZfECvCQIHECfDrmPoHTBJl7YDkPkcMEiTNb5xSxc+cJMgfT5prL4LI6zlFELowx10kLGGOuRKSZocf/AVSBD8dTbI7UjX0jsZpLR80AqHoXsQH2gXfbuA8cOWoSRWzdsV0Du+ZeLhKxAAsMfxBLY+ZTidjakl1rIWsek/XGJGzoUckvY8yij35ZNnshUZGioSJFQ0WKhooUDRUpGipSNFQkBQPHWN9XM58it46xG4/9/ACUgcfY6bAFlH3183ZCFBkeh0VkV0TmReTOGPPls5+iKIqSOz+//PHBQmd6nQAAAABJRU5ErkJggg=="></button>
       </form>
     </li>
@@ -154,7 +158,7 @@
       <ul>
         <li><a href="#hold" data-status="neg">Move on - I don’t love you</a></li>
         <li><a href="#hold" data-status="reality">Who are you?!</a></li>
-        <li><a href="#hurt" data-status="pos">I’m trying to understand you.</a></li>
+        <li><a href="#hold" data-status="pos">I’m trying to understand you.</a></li>
       </ul>
     </li>
     <li id="in-love"> <!-- 1 -->
@@ -171,14 +175,19 @@
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+ <script src="/__/firebase/6.3.4/firebase-app.js"></script>
+
+ <!-- Add Firebase products that you want to use -->
+ <script src="/__/firebase/6.3.4/firebase-database.js"></script>
+ <script src="/__/firebase/init.js"></script>
+
+  <script src="js/vendor/autosize.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
